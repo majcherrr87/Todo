@@ -54,7 +54,6 @@ function App() {
             key={id}
             name={name}
             done={done}
-            id={id}
             onDeleteButtonClick={() => deleteItem(id)}
             onDoneButtonClick={() => finishItem(id)}
           />

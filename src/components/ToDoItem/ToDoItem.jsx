@@ -2,7 +2,6 @@ import { Button } from "../Button/Button";
 import styles from "./ToDoItem.module.css";
 
 export function ToDoItem({
-  id,
   name,
   done,
   onDeleteButtonClick,
@@ -11,7 +10,7 @@ export function ToDoItem({
   return (
     <li className={styles.item}>
       <span className={`${styles.name} ${done ? styles.done : ""}`}>
-        {id} {name}
+        {name}
       </span>
       {!done && <Button onClick={onDoneButtonClick}>Zrobione</Button>}
 
